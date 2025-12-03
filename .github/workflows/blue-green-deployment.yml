@@ -48,7 +48,7 @@ jobs:
     if: ${{ inputs.switch_traffic }}
     needs: deploy-to-target
     runs-on: ubuntu-latest
-    environment: production-approval
+    environment: production-approval # This requires an environment with protection rules set up
     steps:
     - name: Manual Approval Required
       run: |
